@@ -5,7 +5,10 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "exams")
+
 public class Exam {
+    @Temporal(TemporalType.DATE)
+    private java.util.Date examDate;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
