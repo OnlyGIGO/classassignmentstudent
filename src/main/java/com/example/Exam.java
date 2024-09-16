@@ -26,6 +26,7 @@ public class Exam {
     public Exam(Student student, int grade) {
         this.student = student;
         this.grade = grade;
+        this.examDate = new java.util.Date();
     }
 
     public Long getId() {
